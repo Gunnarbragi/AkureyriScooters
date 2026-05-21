@@ -4,95 +4,93 @@ export default function Home() {
 
       {/* HERO */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-{/* BLUE */}
-<div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition">
-
-  <img
-    src="/images/blue-scooter.jpg"
-    alt="Blue mobility scooter"
-    className="w-full h-80 object-cover bg-slate-100 p-4 rounded-2xl"
-  />
-
-  <div className="p-8">
-
-    <h3 className="text-3xl font-bold">
-      Cruise Port Scooter
-    </h3>
-
-    <p className="mt-4 text-slate-600">
-      Located only steps from the harbor.
-      Perfect for cruise visitors and seniors.
-    </p>
-
-    <div className="flex flex-col gap-3 mt-6">
-
-      <a
-        href="https://wa.me/3548988100"
-        className="bg-green-500 text-white px-6 py-3 rounded-xl text-center font-semibold hover:scale-105 transition"
-      >
-        💬 WhatsApp Booking
-      </a>
-
-      <a
-        href="https://m.me/554495891080509"
-        className="bg-blue-600 text-white px-6 py-3 rounded-xl text-center font-semibold hover:scale-105 transition"
-      >
-        📩 Messenger
-      </a>
-
-      <a
-        href="tel:+3548988100"
-        className="bg-black text-white px-6 py-3 rounded-xl text-center font-semibold hover:scale-105 transition"
-      >
-        📞 Call Now
-      </a>
-
-    </div>
-
-  </div>
-</div>
         <div className="absolute inset-0 bg-black/50" />
 
-        <div className="relative z-10 text-center text-white px-6">
-          <div className="mb-6 inline-block bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20">
-            🚢 Only steps from the Akureyri cruise port
+        <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-8 px-6 max-w-6xl mx-auto">
+          
+          {/* BLUE CARD */}
+          <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition w-full md:w-1/2">
+            <img
+              src="/images/blue-scooter.jpg"
+              alt="Blue mobility scooter"
+              className="w-full h-80 object-cover"
+            />
+
+            <div className="p-8">
+              <h3 className="text-3xl font-bold">
+                Cruise Port Scooter
+              </h3>
+
+              <p className="mt-4 text-slate-600">
+                Located only steps from the harbor.
+                Perfect for cruise visitors and seniors.
+              </p>
+
+              <div className="flex flex-col gap-3 mt-6">
+                <a
+                  href="https://wa.me/3548988100"
+                  className="bg-green-500 text-white px-6 py-3 rounded-xl text-center font-semibold hover:scale-105 transition"
+                >
+                  💬 WhatsApp Booking
+                </a>
+
+                <a
+                  href="https://m.me/554495891080509"
+                  className="bg-blue-600 text-white px-6 py-3 rounded-xl text-center font-semibold hover:scale-105 transition"
+                >
+                  📩 Messenger
+                </a>
+
+                <a
+                  href="tel:+3548988100"
+                  className="bg-black text-white px-6 py-3 rounded-xl text-center font-semibold hover:scale-105 transition"
+                >
+                  📞 Call Now
+                </a>
+              </div>
+            </div>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-            Explore Akureyri
-            <span className="block text-blue-200">
-              With Ease
-            </span>
-          </h1>
+          {/* TEXT CONTENT */}
+          <div className="text-center md:text-left text-white md:w-1/2">
+            <div className="mb-6 inline-block bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20">
+              🚢 Only steps from the Akureyri cruise port
+            </div>
 
-          <p className="mt-6 text-xl max-w-2xl mx-auto text-slate-200">
-            Premium mobility scooter rentals for cruise visitors,
-            seniors, and travelers exploring North Iceland.
-          </p>
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+              Explore Akureyri
+              <span className="block text-blue-200">
+                With Ease
+              </span>
+            </h1>
 
-          <div className="mt-10 flex flex-col md:flex-row gap-4 justify-center">
+            <p className="mt-6 text-xl max-w-2xl text-slate-200">
+              Premium mobility scooter rentals for cruise visitors,
+              seniors, and travelers exploring North Iceland.
+            </p>
 
-            <a
-              href="tel:+3548988100"
-              className="bg-white text-black px-8 py-4 rounded-2xl font-semibold hover:scale-105 transition"
-            >
-              📞 Call Now
-            </a>
+            <div className="mt-10 flex flex-col md:flex-row gap-4">
+              <a
+                href="tel:+3548988100"
+                className="bg-white text-black px-8 py-4 rounded-2xl font-semibold hover:scale-105 transition text-center"
+              >
+                📞 Call Now
+              </a>
 
-            <a
-              href="https://wa.me/3548988100"
-              className="bg-green-500 text-white px-8 py-4 rounded-2xl font-semibold hover:scale-105 transition"
-            >
-              💬 WhatsApp
-            </a>
+              <a
+                href="https://wa.me/3548988100"
+                className="bg-green-500 text-white px-8 py-4 rounded-2xl font-semibold hover:scale-105 transition text-center"
+              >
+                💬 WhatsApp
+              </a>
 
-            <a
-              href="https://m.me/554495891080509"
-              className="bg-blue-600 text-white px-8 py-4 rounded-2xl font-semibold hover:scale-105 transition"
-            >
-              📩 Messenger
-            </a>
-
+              <a
+                href="https://m.me/554495891080509"
+                className="bg-blue-600 text-white px-8 py-4 rounded-2xl font-semibold hover:scale-105 transition text-center"
+              >
+                📩 Messenger
+              </a>
+            </div>
           </div>
         </div>
       </section>
