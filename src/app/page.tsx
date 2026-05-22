@@ -183,7 +183,7 @@ export default function Home() {
           </div>
 
           <form
-            action="mailto:akureyriscooters@akureyriscooters.is"
+           action="https://formspree.io/f/xpqnrdjb"
             method="post"
             encType="text/plain"
             className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-3xl shadow-2xl border border-blue-200 p-6 md:p-10 grid md:grid-cols-2 gap-5"
