@@ -240,7 +240,7 @@ export default function Home() {
 
             <div className="md:col-span-2">
               <label className="block text-sm font-black text-slate-700 mb-2">Message / Special Requests</label>
-              <textarea name="Message" rows="4" className="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none focus:ring-4 focus:ring-blue-100 focus:border-blue-500" placeholder="Cruise ship name, pickup notes, accessibility needs, etc." />
+              <textarea name="Message" rows={4} className="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none focus:ring-4 focus:ring-blue-100 focus:border-blue-500" placeholder="Cruise ship name, pickup notes, accessibility needs, etc." />
             </div>
 
             <div className="md:col-span-2 flex flex-col sm:flex-row gap-4 pt-2">
