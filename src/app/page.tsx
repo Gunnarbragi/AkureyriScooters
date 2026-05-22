@@ -61,7 +61,7 @@ export default function Home() {
 
           {/* HERO TEXT - CENTER */}
           <div className="w-full md:w-2/5 text-center md:text-left text-white drop-shadow-lg">
-            <div className="mb-3 md:mb-6 inline-block bg-white/10 backdrop-blur-md px-3 md:px-6 py-2 md:py-3 rounded-full border border-white/20 font-semibold text-xs md:text-base">
+            <div className="mb-3 md:mb-6 inline-block bg-white/10 backdrop-blur-md px-3 md:px-6 py-2 md:py-3 rounded-full border border-white/20 font-semibold text-xs md:text-base animate-pulse">
               🚢 Premium Scooter Rentals
             </div>
 
@@ -125,7 +125,7 @@ export default function Home() {
                   { time: '3 hours', iskPrice: '9.000 kr', usdPrice: '$75' },
                   { time: '4 hours', iskPrice: '12.500 kr', usdPrice: '$100', highlight: true }
                 ].map((item, idx) => (
-                  <div key={idx} className={`flex justify-between items-center px-3 md:px-4 py-2 md:py-3 rounded-lg md:rounded-xl transition text-sm md:text-base ${item.highlight ? 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold' : 'bg-slate-50 hover:bg-slate-100'}`}>
+                  <div key={idx} className={`flex justify-between items-center px-3 md:px-4 py-2 md:py-3 rounded-lg md:rounded-xl transition text-sm md:text-base ${item.highlight ? 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold shadow-lg' : 'bg-slate-50 hover:bg-slate-100'}`}>
                     <span className={item.highlight ? 'font-bold' : 'font-semibold text-slate-700'}>{item.time}</span>
                     <div className="text-right">
                       <div className={item.highlight ? 'font-black text-sm md:text-base' : 'font-bold text-slate-900'}>{item.iskPrice}</div>
@@ -150,7 +150,7 @@ export default function Home() {
                   { time: '3 hours', iskPrice: '14.000 kr', usdPrice: '$115' },
                   { time: '4 hours', iskPrice: '16.500 kr', usdPrice: '$135', highlight: true }
                 ].map((item, idx) => (
-                  <div key={idx} className={`flex justify-between items-center px-3 md:px-4 py-2 md:py-3 rounded-lg md:rounded-xl transition text-sm md:text-base ${item.highlight ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold' : 'bg-slate-50 hover:bg-slate-100'}`}>
+                  <div key={idx} className={`flex justify-between items-center px-3 md:px-4 py-2 md:py-3 rounded-lg md:rounded-xl transition text-sm md:text-base ${item.highlight ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold shadow-lg' : 'bg-slate-50 hover:bg-slate-100'}`}>
                     <span className={item.highlight ? 'font-bold' : 'font-semibold text-slate-700'}>{item.time}</span>
                     <div className="text-right">
                       <div className={item.highlight ? 'font-black text-sm md:text-base' : 'font-bold text-slate-900'}>{item.iskPrice}</div>
@@ -182,7 +182,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-6 md:gap-10">
             {/* RED */}
             <div className="group bg-white rounded-2xl md:rounded-3xl overflow-hidden shadow-lg md:shadow-xl hover:shadow-2xl hover:scale-105 transition duration-300 border border-slate-100">
-              <div className="relative overflow-hidden h-48 md:h-80">
+              <div className="relative overflow-hidden h-48 md:h-80 bg-slate-200">
                 <img
                   src="/images/red-scooter.jpg"
                   alt="Red mobility scooter"
@@ -201,14 +201,14 @@ export default function Home() {
                   href="tel:+3548988100"
                   className="inline-block mt-6 md:mt-8 bg-slate-900 hover:bg-black text-white px-6 md:px-8 py-2 md:py-3 rounded-lg md:rounded-xl font-bold text-sm md:text-base hover:scale-105 transition shadow-lg"
                 >
-                  Book Now →
+                  📞 Book Now
                 </a>
               </div>
             </div>
 
             {/* BLUE */}
             <div className="group bg-white rounded-2xl md:rounded-3xl overflow-hidden shadow-lg md:shadow-xl hover:shadow-2xl hover:scale-105 transition duration-300 border border-slate-100">
-              <div className="relative overflow-hidden h-48 md:h-80">
+              <div className="relative overflow-hidden h-48 md:h-80 bg-slate-200">
                 <img
                   src="/images/blue-scooter.jpg"
                   alt="Blue mobility scooter"
@@ -227,7 +227,7 @@ export default function Home() {
                   href="https://wa.me/3548988100"
                   className="inline-block mt-6 md:mt-8 bg-green-500 hover:bg-green-600 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg md:rounded-xl font-bold text-sm md:text-base hover:scale-105 transition shadow-lg"
                 >
-                  Book on WhatsApp →
+                  💬 WhatsApp
                 </a>
               </div>
             </div>
@@ -251,7 +251,7 @@ export default function Home() {
               { quote: '"Perfect for my mother."', author: 'Karen' },
               { quote: '"Amazing service right by the harbor."', author: 'Jeff W' }
             ].map((review, idx) => (
-              <div key={idx} className="bg-white/10 backdrop-blur-sm p-6 md:p-8 rounded-lg md:rounded-2xl border border-white/20 hover:bg-white/15 hover:border-white/40 transition duration-300 group">
+              <div key={idx} className="bg-white/10 backdrop-blur-sm p-6 md:p-8 rounded-lg md:rounded-2xl border border-white/20 hover:bg-white/15 hover:border-white/40 transition duration-300 group hover:scale-105">
                 <div className="text-2xl mb-3 md:mb-4 group-hover:scale-125 transition">⭐⭐⭐⭐⭐</div>
                 <p className="italic text-slate-100 text-sm md:text-lg leading-relaxed">
                   {review.quote}
@@ -261,6 +261,28 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA SECTION */}
+      <section className="py-16 md:py-20 px-4 md:px-6 bg-blue-600 text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-5xl font-black mb-6">Ready to Explore?</h2>
+          <p className="text-base md:text-lg text-blue-100 mb-8">Book your scooter today and experience the freedom of Akureyri</p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <a
+              href="https://wa.me/3548988100"
+              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:scale-105 transition shadow-lg"
+            >
+              💬 Book on WhatsApp
+            </a>
+            <a
+              href="tel:+3548988100"
+              className="bg-blue-700 hover:bg-blue-800 text-white px-8 py-3 rounded-lg font-bold hover:scale-105 transition shadow-lg"
+            >
+              📞 Call Now
+            </a>
           </div>
         </div>
       </section>
@@ -281,9 +303,9 @@ export default function Home() {
             <div>
               <h4 className="text-white font-bold text-base md:text-lg mb-4 md:mb-6">Contact</h4>
               <div className="space-y-2 md:space-y-4 text-sm md:text-base">
-                <p className="text-slate-300 hover:text-white transition">📍 Grímseyjargata 1, 600 Akureyri</p>
-                <p className="text-slate-300 hover:text-white transition">📞 +354 898 8100</p>
-                <p className="text-slate-300 hover:text-white transition">✉️ akureyriscooters@akureyriscooters.is</p>
+                <p className="text-slate-300 hover:text-white transition cursor-pointer">📍 Grímseyjargata 1, 600 Akureyri</p>
+                <a href="tel:+3548988100" className="text-slate-300 hover:text-white transition block">📞 +354 898 8100</a>
+                <a href="mailto:akureyriscooters@akureyriscooters.is" className="text-slate-300 hover:text-white transition block">✉️ akureyriscooters@akureyriscooters.is</a>
               </div>
             </div>
 
