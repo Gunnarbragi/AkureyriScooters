@@ -290,7 +290,7 @@ export default function Home() {
             <div>
               <h4 className="text-white font-bold text-lg mb-6">Hours</h4>
               <p className="text-slate-300">Monday – Friday</p>
-              <p className="text-slate-300 text-lg font-semibold text-blue-400">10:00 – 16:00</p>
+             <p className="text-slate-300 text-lg font-semibold text-blue-400">08:00 – 17:00</p>
               <p className="text-slate-500 mt-4 text-sm">Available for special requests outside hours</p>
             </div>
           </div>
