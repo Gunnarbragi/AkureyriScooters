@@ -27,11 +27,11 @@ export default function Home() {
             </div>
 
             <div className="p-6 md:p-8">
-              <h3 className="text-2xl md:text-3xl font-black text-slate-900">
+              <h3 className="text-2xl md:text-3xl font-black text-white">
                 Cruise Port Scooter
               </h3>
 
-              <p className="mt-2 md:mt-3 text-slate-600 text-xs md:text-sm leading-relaxed">
+              <p className="mt-2 md:mt-3 text-slate-200 text-xs md:text-sm leading-relaxed">
                 Located only steps from the harbor. Perfect for cruise visitors and seniors exploring Akureyri.
               </p>
 
@@ -182,10 +182,10 @@ export default function Home() {
             </p>
           </div>
 
-          <form
+       <form
            action="https://formspree.io/f/xpqnrdjb"
-            method="post"
-            encType="text/plain"
+            method="POST"
+            encType="application/x-www-form-urlencoded"
             className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-3xl shadow-2xl border border-blue-200 p-6 md:p-10 grid md:grid-cols-2 gap-5"
           >
             <div>
